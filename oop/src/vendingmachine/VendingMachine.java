@@ -6,12 +6,15 @@ package vendingmachine;
  * 자판기 has 4 상품 (VendingMachine has 4 Item)
  */
 
+// 클래스 설계 순서
 // 1) A has a B 관계를 파악한다. e.g) CoffeeMahchine has a Coffee
 // 2) B의 데이터필드를 선언한다.
 //	  단, 구체적인 정보는 할당하지 않으며
 //    매개변수를 사용할 수 있도록 생성자를 작성한다.
-// 3) A의 데이터필드를 선언한다.
-//	  처음은 
+// 3) A의 데이터필드를 선언한다. (B타입)
+//	  구체적인 데이터를 가진 상품(B객체)을 파라미터로 사용할 수 있도록(has)
+//    생성자를 사용하여 데이터에 할당한다.
+// 4) *상품의 구체적인 정보는 main메서드에서 설정한다.
 
 public class VendingMachine {
 	
